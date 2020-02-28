@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #719e33;
+}
+
+.text-animation {
+  width: 80%;
+  margin-top: 40vh;
+  margin-left: 3%;
+  position: relative;
+  font-family: "Abril Fatface";
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #212619, #d5e9bb, #212619);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+.about-me {
+  width: 70vw;
+  margin-left: 10vw;
+  margin-top: 10vh;
+
+  font-family: "Zilla Slab";
+  font-size: 1.8em;
+}
+.wildcode {
+  color: red;
+}
+.overlay {
+  height: 50%;
+  width: 0;
+  position: relative;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  background-color: black;
+
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 20vh;
+  width: 70vw;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  text-decoration: none;
+  line-height: 1.2em;
+  text-align: left;
+  margin-left: 10vw;
+  font-size: 6.5vw;
+  color: #212619;
+  display: block;
+  transition: 0.5s;
+}
+
+/* Position the close button (top right corner) */
+.overlay {
+  position: absolute;
+  right: 45px;
+  font-size: 60px;
+}
+.menubutton {
+  cursor: pointer;
+  position: absolute;
+  top: 4.7vh;
+  right: 5%;
+  font-size: 2.3em;
+  text-shadow: 0 0 7px #03205a;
+}
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 90px;
+}
+.project_link a {
+  font-family: "Zilla Slab";
+  text-decoration: none;
+  color: #212619;
+  font-weight: 700;
+}
+.project_link {
+  background-color: rgba(117, 203, 0, 1);
+}
+@media screen and (min-width: 300px) and (max-width: 350px) {
+  .overlay {
+    height: 50%;
+  }
+  .overlay a {
+    font-size: 10vw;
+    color: #d5e9bb;
+  }
+  .overlay .closebtn {
+    font-size: 65px;
+    top: 15px;
+    right: 35px;
+  }
+  .text-animation {
+    font-size: 1.8em;
+    margin-top: 55vh;
+    width: 95%;
+  }
+  .about-me {
+    margin-top: 5vh;
+    font-size: 1.8em;
+    width: 90%;
+  }
+  iframe {
+    width: 80%;
+    height: 70%;
+    padding: 5%;
+    margin-left: 5%;
+  }
+  .project_link a {
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 420px) {
+  .overlay {
+    height: 50%;
+  }
+  .overlay a {
+    font-size: 10vw;
+    color: #d5e9bb;
+  }
+  .overlay .closebtn {
+    font-size: 65px;
+    top: 15px;
+    right: 35px;
+  }
+  .text-animation {
+    width: 90%;
+    font-size: 2em;
+    margin-top: 68vh;
+    margin-left: 5%;
+  }
+  .about-me {
+    margin-top: 5vh;
+    font-size: 2em;
+    width: 85%;
+  }
+  iframe {
+    width: 80%;
+    height: 70%;
+    padding: 5%;
+    margin-left: 5%;
+  }
+  .project_link a {
+    margin-left: 10%;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .overlay a {
+    font-size: 8vw;
+    color: #d5e9bb;
+  }
+  .overlay .closebtn {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+  }
+  .text-animation {
+    font-size: 3.3em;
+    margin-top: 35vh;
+    width: 90%;
+    margin-left: 9vw;
+  }
+  .about-me {
+    margin-top: 5vh;
+    width: 85%;
+
+    font-size: 2.5em;
+  }
+  iframe {
+    width: 50vw;
+    height: 40vw;
+    padding: 5%;
+    margin-left: 20%;
+  }
+  .project_link a {
+    margin-left: 20%;
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1050px) {
+  .overlay a {
+    font-size: 7vw;
+  }
+  .overlay .closebtn {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+  }
+  .text-animation {
+    font-size: 3.5em;
+    margin-top: 40vh;
+    width: 90%;
+    margin-left: 9vw;
+  }
+  .about-me {
+    margin-top: 5vh;
+    width: 85%;
+
+    font-size: 2.9em;
+  }
+  iframe {
+    width: 50vw;
+    height: 40vw;
+    padding: 5%;
+    margin-left: 20%;
+  }
+  .project_link a {
+    margin-left: 25%;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1051px) {
+  .overlay a {
+    font-size: 3vw;
+  }
+  .overlay .closebtn {
+    font-size: 65px;
+    top: 15px;
+    right: 35px;
+  }
+  .overlay a:hover,
+  .overlay a:focus {
+    text-decoration: none;
+    color: #f1f1f1;
+    padding-left: 50px;
+  }
+  .text-animation {
+    margin-left: 15%;
+    font-size: 4em;
+  }
+  .about-me {
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 10vh;
+    background-color: #719e33;
+    padding: 5%;
+    transition: all 0.5s ease-in;
+    font-family: "Zilla Slab";
+    font-size: 2em;
+  }
+  .about-me:hover {
+    background-color: #212619;
+    color: #d5e9bb;
+  }
+  iframe {
+    width: 40vw;
+    height: 30vw;
+    padding: 5%;
+    margin-left: 23%;
+  }
+  .project_link a {
+    font-size: 2em;
+  }
+  .project_link {
+    width: 50%;
+    padding: 2%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: -2%;
+    border-radius: 5px;
+    background-color: rgba(117, 203, 0, 0.5);
+  }
+  .project_link:hover {
+    background-color: #212619;
+  }
+  .project_link:hover a {
+    color: #d5e9bb;
+  }
+}
