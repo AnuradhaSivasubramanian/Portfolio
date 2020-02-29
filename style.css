@@ -105,6 +105,22 @@ body {
 .project_link {
   background-color: rgba(117, 203, 0, 1);
 }
+.social_media {
+  color: #03205a !important;
+  padding: 2%;
+  font-size: 2em;
+}
+.members-item {
+  text-align: center;
+  margin-top: 4%;
+  padding: 10px;
+}
+.members_item a:hover {
+  color: #f76c6c !important;
+  height: 50px;
+  width: 50px;
+  text-shadow: 2px 2px 20px #f76c6c;
+}
 @media screen and (min-width: 300px) and (max-width: 350px) {
   .overlay {
     height: 50%;

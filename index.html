@@ -17,36 +17,38 @@
     <title>Portfolio</title>
   </head>
   <body class="body">
-    <header>
-      <nav>
-        <div id="myNav" class="overlay ">
-          <a
-            href="javascript:void(0)"
-            class="closebtn pointer"
-            onclick="closeNav()"
-            >&times;</a
-          >
+    <main>
+      <header>
+        <nav>
+          <div id="myNav" class="overlay ">
+            <a
+              href="javascript:void(0)"
+              class="closebtn pointer"
+              onclick="closeNav()"
+              >&times;</a
+            >
 
-          <div class="overlay-content bold ">
-            <a href="#about_me" onclick="closeNav()">About me</a>
-            <a href="#my-projects" onclick="closeNav()">My Projects</a>
-            <a href="#contact-me" onclick="closeNav()">Contact Me</a>
+            <div class="overlay-content bold ">
+              <a href="#about_me" onclick="closeNav()">About me</a>
+              <a href="#my-projects" onclick="closeNav()">My Projects</a>
+              <a href="#contact-me" onclick="closeNav()">Contact Me</a>
+            </div>
           </div>
-        </div>
 
-        <span class="bold pointer menubutton" onclick="openNav()">menu</span>
-      </nav>
-      <h1 class="text-animation">Anuradha Sivasubramanian</h1>
-      <section id="welcome-section">
-        <p class="about-me" id="about_me">
-          Hi, I am Anuradha. I am a front-end developer trainee @<span
-            class="wildcode"
-          >
-            Wild Code School Amsterdam. </span
-          >I am learning to become a web-developer. Here are few of my projects
-          that I developed during this journey.
-        </p>
-      </section>
+          <span class="bold pointer menubutton" onclick="openNav()">menu</span>
+        </nav>
+        <h1 class="text-animation">Anuradha Sivasubramanian</h1>
+        <section id="welcome-section">
+          <p class="about-me" id="about_me">
+            Hi, I am Anuradha. I am a front-end developer trainee @<span
+              class="wildcode"
+            >
+              Wild Code School Amsterdam. </span
+            >I am learning to become a web-developer. Here are few of my
+            projects that I developed during this journey.
+          </p>
+        </section>
+      </header>
       <section class="my-projects" id="my-projects">
         <div class="tribute">
           <iframe
@@ -110,7 +112,28 @@
           </p>
         </div>
       </section>
-    </header>
+      <div class="members-item" id="contact-me">
+        <a
+          href="https://www.linkedin.com/in/anuradha-sivasubramanian/"
+          class="social_media"
+          target="blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a
+          href="https://github.com/AnuradhaSivasubramanian"
+          class="social_media"
+          target="blank"
+        >
+          <i class="fab fa-github-alt"></i>
+        </a>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/70be1a3c92.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
